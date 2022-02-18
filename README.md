@@ -6,6 +6,7 @@
  ## Game Images
  ![Game images](game.png)
 
+### Libraries
  Using only two libraries
 
 * **Random**
