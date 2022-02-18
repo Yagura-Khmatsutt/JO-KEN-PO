@@ -6,3 +6,8 @@
  ## Game Images
  ![Game images](game.png)
 
+ A utilização de somente duas bibliotecas 
+
+* **Random**
+* **Time**
+
