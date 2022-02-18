@@ -6,7 +6,7 @@
  ## Game Images
  ![Game images](game.png)
 
- A utilização de somente duas bibliotecas 
+ Using only two libraries
 
 * **Random**
 * **Time**
