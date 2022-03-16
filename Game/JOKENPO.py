@@ -26,34 +26,37 @@ sleep(0.5)
 
 print('You chose {}'.format(itens[player]))
 print('Opponent will play {}'.format(itens[opponentWillPlay]))
+if player >= 3:
+    print('\33[31m//ERROR [number invalid!]')
+else:
+    if opponentWillPlay == 0:
+        if player == 0:
+            print('A TIE')
+        elif player == 1:
+            print('\33[34mYOU WIN')
+        elif player == 2:
+            print('\33[31mGAME OVER')
+        else:
+            print('\33[31m//ERROR [number invalid!]')
+    elif opponentWillPlay == 1:
+        if player == 0:
+            print('\33[31mGAME OVER')
+        elif player == 1:
+            print('A TIE')
+        elif player == 2:
+            print('\33[34mYOU WIN')
+        else:
+            print('\33[31m//ERROR [number invalid!]')
 
-if opponentWillPlay == 0:
-    if player == 0:
-        print('A TIE')
-    elif player == 1:
-        print('\33[34mYOU WIN')
-    elif player == 2:
-        print('\33[31mGAME OVER')
-    else:
-        print('\33[31m//ERROR [number invalid!]')
-elif opponentWillPlay == 1:
-    if player == 0:
-        print('\33[31mGAME OVER')
-    elif player == 1:
-        print('A TIE')
-    elif player == 2:
-        print('\33[34mYOU WIN')
-    else:
-        print('\33[31m//ERROR [number invalid!]')
+    elif opponentWillPlay == 2:
+        if player == 0:
+            print('\33[34mYOU WIN')
+        elif player == 1:
+            print('\33[31mGAME OVER')
+        elif player == 2:
+            print('A TIE')
+        else:
+            print('\33[31m//ERROR [number invalid!]')
 
-elif opponentWillPlay == 2:
-    if player == 0:
-        print('\33[34mYOU WIN')
-    elif player == 1:
-        print('\33[31mGAME OVER')
-    elif player == 2:
-        print('A TIE')
-    else:
-        print('\33[31m//ERROR [number invalid!]')
 #print('Start again?') /FUTURE OPTIONS
 
